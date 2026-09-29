@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anton × Saint Laurent — Comment Randomizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Sarabun:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <figure class="photo" aria-hidden="true">
+    <img id="photo" src="images/01.jpg" alt="">
+  </figure>
+  <section class="panel">
+    <header>
+      <h1>SAINT LAURENT</h1>
+      <p class="sub">Anton — live comment randomizer</p>
+    </header>
+
+    <nav id="tabs" aria-label="หมวดคอมเมนต์"></nav>
+
+    <blockquote id="text" aria-live="polite">กดสุ่มเพื่อเริ่ม</blockquote>
+
+    <div class="actions">
+      <button id="next" type="button">สุ่มคอมเมนต์</button>
+      <button id="copy" type="button" class="ghost">คัดลอก</button>
+    </div>
+
+    <label class="auto"><input type="checkbox" id="autocopy" checked> คัดลอกอัตโนมัติทุกครั้งที่สุ่ม</label>
+    <p class="hint">กด Space หรือ Enter เพื่อสุ่ม · <span id="count"></span></p>
+  </section>
+</main>
+<script src="comments.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
